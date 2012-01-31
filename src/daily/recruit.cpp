@@ -24,7 +24,7 @@ This file is part of Liberal Crime Squad.                                       
 
 
 /* recruit struct constructor */
-recruitst::recruitst() : task(0), timeleft(0), level(0), eagerness1(0)
+recruitst::recruitst() : timeleft(0), level(0), eagerness1(0), task(0)
 {
    //Has heard of the LCS
    if((int)LCSrandom(100)<attitude[VIEW_LIBERALCRIMESQUAD])

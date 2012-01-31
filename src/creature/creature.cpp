@@ -445,7 +445,7 @@ void Creature::creatureinit(void)
 }
 
 Creature::Creature(const char* inputXml)
- : armor(NULL), weapon(NULL), prisoner(NULL)
+ : weapon(NULL), armor(NULL), prisoner(NULL)
 {
    CMarkup xml;
    xml.SetDoc(inputXml);
@@ -832,7 +832,7 @@ int Creature::get_attribute(int attribute, bool usejuice) const
       else if(juice<0)ret=static_cast<int>(ret*0.8);    // Punk
       else if(juice>=10)
       {
-         if(juice<50)ret=static_cast<int>(ret+=1); // Activist
+         if(juice<50)ret=static_cast<int>(ret+1); // Activist
          else if(juice<100)ret=static_cast<int>(ret*1.1+2); // Socialist Threat
          else if(juice<200)ret=static_cast<int>(ret*1.2+3); // Revolutionary
          else if(juice<500)ret=static_cast<int>(ret*1.3+4); // Urban Guerrilla

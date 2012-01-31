@@ -61,7 +61,6 @@ class ArmorType : public ItemType
       int make_price_;
       bool deathsquad_legality_;
 
-      int stealth_value_;
       int armor_body_;
       int armor_head_;
       int armor_limbs_;
@@ -71,6 +70,7 @@ class ArmorType : public ItemType
       bool cover_arms_;
       bool cover_legs_;
       bool conceal_face_;
+      int stealth_value_;
 
       string shortname_;
       string shortname_future_;

@@ -409,7 +409,7 @@ char completedate(datest &d,int p,char &clearformess)
             addstr(pool[p]->name);
             if (d.date.size()>2)
             {
-               sprintf(datestr, " realizes %s has commited to eating %d meals at once.", pool[p]->heshe(), d.date.size());
+               sprintf(datestr, " realizes %s has commited to eating %ld meals at once.", pool[p]->heshe(), d.date.size());
                addstr(datestr);
             }
             else

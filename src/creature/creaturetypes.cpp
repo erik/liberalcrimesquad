@@ -2761,7 +2761,7 @@ bool verifyworklocation(Creature &cr, char test_location, char test_type)
    // Quick exit if only checking if a certain type works
    if(test_type!=-1)
    {
-      return okaysite[test_location];
+      return okaysite[(int)test_location];
    }
 
    char swap=0;

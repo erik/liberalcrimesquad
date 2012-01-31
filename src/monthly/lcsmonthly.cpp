@@ -70,10 +70,15 @@ void guardianupdate(char size, char power)
    {
       addstr("Many people are reading it.");
    }
+   /*
+    * XXX: This if statement is impossible to hit, due to the signedness of power.
+    * However, it cannot simply be changed to unsigned char, as the initial if
+    * compares to less than 0 which would always be true in that case.
    else if(power<250)
    {
       addstr("The response is very strong. People are changing their minds.");
    }
+   */
    else
    {
       addstr("The response is electric. Everyone is talking about this month's");

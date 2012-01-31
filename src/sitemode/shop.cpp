@@ -1013,9 +1013,7 @@ bool Shop::ShopItem::legal() const
    switch (itemclass_)
    {
       case WEAPON: r = weapontype[getweapontype(itemtypename_)]->is_legal(); break;
-      /*case CLIP:   r = getcliptype(itemtypename_); break; //Can't be illegal.
-      case ARMOR:  r = getarmortype(itemtypename_); break;
-      case LOOT:   r = getloottype(itemtypename_); break;*/
+      case CLIP: case ARMOR: case LOOT: break; // XXX: can't be illegal
    }
    
    return r;

@@ -1464,7 +1464,7 @@ void funds_and_trouble(char &clearformess)
    }
 
    //GRAFFITI
-   if(graffiti.size()>=0)
+   if(graffiti.size()!=0)
    {
       for(s=0;s<graffiti.size();++s)
       {
@@ -2851,7 +2851,7 @@ char stealcar(Creature &cr,char &clearformess)
          if(method==1)
          {
             int difficulty;
-            char * location;
+            const char * location;
             
             if(!keys_in_car)
             {

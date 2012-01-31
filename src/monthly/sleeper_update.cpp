@@ -720,7 +720,7 @@ void sleeper_steal(Creature &cr,char &clearformess,char canseethings,int *libpow
       case SITE_INDUSTRY_POLLUTER:
             item="LOOT_CHEMICAL";
          itemindex = getloottype(item);
-         if(itemindex=getloottype(item) > -1) {shelter->loot.push_back(new Loot(*loottype[itemindex]));}
+         if(itemindex > -1) {shelter->loot.push_back(new Loot(*loottype[itemindex]));}
          else {numberofxmlfails++;}
          break;
       case SITE_CORPORATE_HEADQUARTERS:

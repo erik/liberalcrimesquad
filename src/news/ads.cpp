@@ -255,7 +255,7 @@ void displayads(newsstoryst& ns, bool liberalguardian, short* storyx_s, short* s
       if(ns.guardianpage>=5)adnumber+=LCSrandom(2)+1;
       if(ns.guardianpage>=6)adnumber+=LCSrandom(2)+1;
    }
-   char addplace[2][3]={0,0,0,0,0,0};
+   char addplace[2][3]={{0,0,0}, {0,0,0}};
    if(adnumber>6)adnumber=6;
    while(adnumber>0)
    {

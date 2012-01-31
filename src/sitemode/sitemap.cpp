@@ -1135,7 +1135,7 @@ void configSiteScript::generatehallway_y(int rx, int ry, int dx, int dy, int z)
       if(y%4==0)
       {
          // Pick a door location for the left
-         char door_y=y+LCSrandom(3)-1;
+         int door_y=y+LCSrandom(3)-1;
          // Create the left door
          levelmap[rx-1][door_y][z].flag&=~SITEBLOCK_BLOCK;
          levelmap[rx-1][door_y][z].flag|=SITEBLOCK_DOOR;
