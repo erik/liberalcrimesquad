@@ -1,0 +1,8 @@
+*.o
+*~
+config*
+Makefile
+src/.deps/
+src/crimesquad
+stamp-h1
+
